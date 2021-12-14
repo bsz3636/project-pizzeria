@@ -429,8 +429,8 @@
       /* create element using utils.createElementFromHTML */
       const generatedDOM = utils.createDOMFromHTML (generatedHTML);
 
-/* find menu container */
-//const menuContainer = document.querySelector(select.containerOf.menu);
+      /* find menu container */
+      //const menuContainer = document.querySelector(select.containerOf.menu);
 
       /* add element to menu */
       thisCart.dom.productList.appendChild(generatedDOM);
