@@ -1,5 +1,8 @@
 import {templates, select} from '../settings.js';
 import AmountWidget from './AmountWidget.js';
+import DatePicker from './DatePicker.js';
+import HourPicker from './HourPicker.js';
+
 
 class Booking {
   constructor(element){
@@ -19,6 +22,8 @@ class Booking {
     thisBooking.dom.wrapper.innerHTML = generatedHTML;
     thisBooking.dom.peopleAmount = element.querySelector(select.booking.peopleAmount);
     thisBooking.dom.hoursAmount = element.querySelector(select.booking.hoursAmount);
+    thisBooking.dom.datePicker = element.querySelector(select.widgets.datePicker.wrapper);
+    thisBooking.dom.hourPicker = element.querySelector(select.widgets.hourPicker.wrapper);
   }
 
   initWidgets(){
@@ -26,12 +31,11 @@ class Booking {
 
     thisBooking.peopleAmount = new AmountWidget (thisBooking.dom.peopleAmount);
     thisBooking.hoursAmount = new AmountWidget (thisBooking.dom.hoursAmount);
-    /*thisCartProduct.dom.amountWidget.addEventListener('updated',function(){
-        thisCartProduct.amount = thisCartProduct.amountWidget.value;
-        thisCartProduct.price = thisCartProduct.priceSingle * thisCartProduct.amount;
-        thisCartProduct.dom.price.innerHTML = thisCartProduct.price;
-      });*/
+
+    thisBooking.datePicker = new DatePicker (thisBooking.dom.datePicker);
+    thisBooking.hourPicker = new HourPicker (thisBooking.dom.hourPicker); 
     
   }
 }
+
 export default Booking;

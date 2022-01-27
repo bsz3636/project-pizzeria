@@ -76,3 +76,5 @@ utils.addDays = function(dateStr, days){
   dateObj.setDate(dateObj.getDate() + days);
   return dateObj;
 };
+
+export default utils;
