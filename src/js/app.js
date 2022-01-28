@@ -45,13 +45,8 @@ const app = {
 
     /*add class "active" to matching pages, remove from non-mathing */
     for(let page of thisApp.pages){
-      /*if(page.id == pageId){
-        page.classList.add(classNames.pages.active);
-      } else {
-        page.classList.remove(classNames.pages.active);
-      }*/
+      
       page.classList.toggle(classNames.pages.active, page.id == pageId);
-
     }
     
     /*add class "active" to matching links, remove from non-mathing */
@@ -70,8 +65,6 @@ const app = {
     for(let productData in thisApp.data.products){
       new Product(thisApp.data.products[productData].id, thisApp.data.products[productData]);
     }
-    //const testProduct = new Product();
-    //console.log('testProduct:',testProduct);
   },
   initData: function(){
     const thisApp = this;
@@ -107,7 +100,6 @@ const app = {
     });
   },
 
-  
   initBooking(){
     const thisApp = this;
 
@@ -129,7 +121,6 @@ const app = {
     thisApp.initCart();
     thisApp.initBooking();
   },
-
 };
   
 app.init();

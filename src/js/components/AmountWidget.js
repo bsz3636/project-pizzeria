@@ -7,9 +7,6 @@ class AmountWidget extends BaseWidget{
     super(element, settings.amountWidget.defaultValue);
     const thisWidget = this;
 
-    //console.log('AmountWidget: ',thisWidget);
-    //console.log('constructor arguments: ',element);
-
     thisWidget.getElements(element);
    
     thisWidget.initActions();
