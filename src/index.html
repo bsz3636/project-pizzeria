@@ -9,6 +9,7 @@
   <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="vendor/range-slider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,6 +22,7 @@
           <h2 class="logo__subtitle">the best homemade Italian food</h2>
         </div>
         <div class="main-nav">
+          <a href="#home">Home</a>
           <a href="#order">Order</a>
           <a href="#booking">Booking</a>
         </div>
@@ -63,6 +65,9 @@
   </header>
 
   <div id="pages">
+    <section id="home">
+      <div id="home-page" class="home-page container"></div>
+    </section>
     <section id="order">
       <div id="product-list" class="product-list container"></div>
     </section>
@@ -97,6 +102,130 @@
         <li><a href="#remove">Remove<i class="fas fa-trash-alt"></i></a></li>
       </ul>
     </li>
+  </script>
+
+  <script id="template-home-page" type="text/x-handlebars-template">
+    <div class="home-widget">
+      
+      <div class="order-online sector">
+        <div class="start-box-text order-box">
+          <a class="link" href="#order">
+            <h2 class="start-text">ORDER ONLINE</h2>
+          </a>
+          <p class="start-text-hover">Delicious food delivered to your door</p>
+        </div>
+      </div>
+        
+      <div class="book-table sector">
+        <div class="start-box-text booking-box">
+          <a class="link" href="#booking">
+            <h2 class="start-text"> BOOK A TABLE</h2>
+          </a>
+        </div>
+      </div>  
+    </div>
+
+    <div class="hours">
+      <h2 class="start-text"> OPENING HOURS:</h2>
+      <p class="hour-text">MON-SUN, 12PM-11PM</p>
+    </div>
+
+    <div class="main-carousel" >
+      <div class="carousel-cell">
+        <div>
+          <div class="image-carousel"><img src="images/assets/pizza-3.jpg"></div>
+          <div class="tekst-carousel">
+            <h3 class= "title-carousel">I GIVE FIVE STARS</h3>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus varius varius est, nec porttitor est scelerisque eu. </p>
+            <p class="sign-carousel">- Mark</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div>
+          <div class="image-carousel"><img src="images/assets/pizza-3.jpg"></div>
+          <div class="tekst-carousel">
+            <h3 class= "title-carousel">FAST AND TASTY</h3>
+            <p class="description">Maecenas fermentum elit eu purus blandit, eget dictum mi molestie. Praesent blandit mauris urna, ac vestibulum lectus fermentum non.</p>
+            <p class="sign-carousel">- Peter</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-cell">
+        <div>
+          <div class="image-carousel"><img src="images/assets/pizza-3.jpg"></div>
+          <div class="tekst-carousel">
+            <h3 class= "title-carousel">IT WAS DELICIOUS</h3>
+            <p class="description">Aliquam ornare massa mauris, in faucibus ex posuere quis. Nunc vulputate elementum mauris, a blandit orci convallis vitae. </p>
+            <p class="sign-carousel">- Agnes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-flex">
+        <div class="img-box">
+          <div id="overlay"></div>
+          <img class="img-gal" src='images/assets/pizza-4.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-flex">
+        <div class="img-box">
+          <img class="img-gal" src='images/assets/pizza-5.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-flex">
+        <div class="img-box">
+          
+          <img class="img-gal" src='images/assets/pizza-6.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-flex">
+        <div class="img-box">
+          <img class="img-gal" src='images/assets/pizza-7.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-flex">
+        <div class="img-box">
+          <img class="img-gal" src='images/assets/pizza-8.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery-flex">
+        <div class="img-box">
+          <img class="img-gal" src='images/assets/pizza-9.jpg'>
+          <ul class="icons">
+            <li><i class="fas fa-heart"></i></li>
+              <li><i class="fas fa-share-alt"></i></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a class="instagram" href="#"><p>Viev more on Instagram</p></a>
+    </footer>
+
   </script>
 
   <script id="template-menu-product" type="text/x-handlebars-template">
@@ -243,6 +372,7 @@
       </form>
     </div>
   </script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src = "vendor/range-slider.min.js"></script>

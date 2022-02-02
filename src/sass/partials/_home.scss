@@ -1,0 +1,182 @@
+.home-page {
+  margin: ($base-size * 3.5) auto;
+  padding: ($base-size * 6) ($base-size * 4);
+  background: $color-light;
+  border-bottom: 1px solid lighten($color-dark, 70%);
+  border-radius: $radius;
+}
+
+.home-widget {
+  display: flex;  
+}
+
+.sector {
+  position: relative;
+  flex: 100%;
+  height: 150px;
+  border-radius: 5px;    
+}
+
+.order-online {
+  background-image: url('../../images/assets/pizza-1.jpg');
+  background-size: cover;
+  margin-right: 5px; 
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.start-text-hover {
+  font-size: 15px;
+  font-family: $font-text;
+  opacity: 0;
+  color: $color-light;
+  text-align: center;
+    
+  }
+.order-online:hover{
+  .start-text {
+    margin-top: -20px;
+    transition: 1s;
+    }
+  .start-text-hover {
+        opacity: 1;
+}
+}
+
+.book-table:hover{
+  .start-text {
+  margin-top: -20px;
+  transition: 1s;
+  }
+}
+
+.book-table {
+  background-image: url('../../images/assets/pizza-2.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-left: 5px;
+  padding: 50px 0; 
+  text-align: center; 
+}
+
+.link {
+  text-decoration: none;
+}
+
+.start-text {
+  margin: 0 auto;
+  font-family: $font-header;
+  color: $color-light;
+  font-size: 30px;
+}
+
+.hours{
+  height: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: $color-main;
+  text-align: center;
+  color: $color-light;
+  padding: 50px 0 5px 0;
+}
+.hour-text {
+  font-size: 17px;
+  margin: 0;
+}
+
+.main-carousel {
+  margin-top: 90px;
+  position:relative;
+}
+
+.image-carousel {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.image-carousel img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 3px;
+  }
+
+.tekst-carousel {
+  padding: 10px 0 10px 38%;
+  text-align: left;
+  font-family: $font-text;
+}
+
+.title-carousel {
+  font-size: 17px;
+}
+
+.description {
+    text-align: justify;
+    font-size: 16px;
+}
+
+.sign-carousel {
+  font-style: italic;
+  font-size: 16px;
+}
+
+.gallery {
+  margin-top: 90px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-flex {
+  flex: 33%;
+  position: relative;
+  margin: 1px;
+}
+
+.img-gal {
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 3px;   
+}
+
+.img-box {
+  position: relative;
+  background-color: gray;
+  width: 190px;
+  height: 190px;
+}
+
+.img-box:hover .img-gal {
+  opacity: 0.7;
+}
+
+.icons {
+  position: absolute;
+  color: $color-light;
+  z-index: 5;
+  bottom: 30%;
+  left: 13%;
+  font-size: 25px;
+}
+
+i {
+  margin-left: 7px;
+}
+
+i:hover {
+  color: $color-main;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+}
+footer {
+  margin-top: 25px;
+}
+.instagram{
+  color: $color-danger;
+}
