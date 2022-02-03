@@ -1,6 +1,10 @@
 {
     "name": "fer-07-project",
     "version": "1.0.0",
+    "engines": {
+        "node": "14.x",
+        "npm": "8.x"
+    },
     "description": "",
     "main": "index.html",
     "scripts": {
